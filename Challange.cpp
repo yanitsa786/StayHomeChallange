@@ -19,7 +19,7 @@ Challange::Challange(const char* _name)
 {
 	if (strlen(_name) <= maxChallangeNameLength)
 	{
-		return _name;
+		return; //stop execution
 	}
 	else
 	{
@@ -53,7 +53,7 @@ Challange::Challange(const char* _name, unsigned int _timesCalled, unsigned int 
 
 	if (strlen(_name) <= maxChallangeNameLength)
 	{
-		return;
+		return; 
 	}
 	else
 	{

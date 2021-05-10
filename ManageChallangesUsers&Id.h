@@ -10,7 +10,7 @@ private:
 public:
 	ManageChallanges();
 
-	Challenge* createChallange(char* name);
+	Challenge* createChallange(char* name); //function to create challange by name
 	Challenge* getChallangeByName(char* name);
 
 	Challenge* getAllChallanges();

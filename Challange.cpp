@@ -105,14 +105,6 @@ Challange::~Challange()
 	this->deleteMemory("status");
 }
 
-
-char* Challange(const char* source)
-{
-	char* temp = new char[strlen(source) + 1];
-	strcpy_s(temp, strlen(source) + 1, source);
-	return temp;
-}
-
 void Challange::deleteMemory(char const* toBeDeleted)
 {
 	if (strcmp(toBeDeleted, "status") == 0)

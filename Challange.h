@@ -17,12 +17,12 @@ private:
 	bool validateName(char* name);
 
 public:
-	Challange();
-	Challange(const char*);
+	Challange(); 
+	Challange(const char*); //for the challange name
 	Challange(const Challange&);
-	Challange(const char*, unsigned int, unsigned int, double);
-	Challange(const char*, const char*, unsigned int, unsigned int, double);
-	Challange(char* name);
+	Challange(const char*, unsigned int, unsigned int, double); //for the rating
+	Challange(const char*, const char*, unsigned int, unsigned int, double); //
+	Challange(char* name); 
 	~Challange();
 
 	const char* getName() const;

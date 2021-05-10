@@ -7,8 +7,7 @@
 
 
 int main() {
-	ManageUsers manageUsers;
-	ManageChallanges manageChallanges;
+	ManageChallangesUsers&Id manage;
 
 	CreateChallange* createChallange = new CreateChallange(&manageChallange, &manageUsers);
 	ListBy* list_by = new ListBy(&manageChallanges);

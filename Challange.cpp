@@ -127,7 +127,7 @@ void Challange::deleteMemory(char const* toBeDeleted)
 
 char* Challange::copyMemory(const char*)
 {
-	return nullptr;
+	return nullptr; //null pointer value
 }
 
 
@@ -151,7 +151,7 @@ void Challange::rate(double _rating)
 {
 	double newRating = this->rating * this->timesCompleted;
 	newRating += _rating;
-	newRating /= (++this->timesCompleted);
+	newRating /= (this->timesCompleted++);
 	this->rating = newRating;
 }
 
@@ -159,7 +159,7 @@ void Challange::nStatus()
 {
 	this->timesCalled++;
 
-	if (this->timesCalled > 10 && strcmp(this->status, "Old") != 0)
+	if (this->timesCalled > 10 && strcmp(this->status, "Old") != 0) //strcmp to compare string arguments
 	{
 		this->deleteMemory("status");
 		this->status = this->copyMemory("Old");

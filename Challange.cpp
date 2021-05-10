@@ -19,7 +19,7 @@ Challange::Challange(const char* _name)
 {
 	if (strlen(_name) <= maxChallangeNameLength)
 	{
-		return ;
+		return _name;
 	}
 	else
 	{
